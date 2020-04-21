@@ -81,6 +81,56 @@
         context.strokeStyle="#000000";
         context.lineWidth=1;
         context.strokeRect(1048,90,25,24);
+        
+//Tempat sampah Ke3
+var grd=context.createLinearGradient(0,0,270,0);
+
+//Tong ke3
+        grd.addColorStop("0","yellow");
+        grd.addColorStop("0.3","yellow");
+        grd.addColorStop("0.5","yellow");
+        grd.addColorStop("0.6","yellow");
+        grd.addColorStop("0.8","red");
+        grd.addColorStop("0.9","yellow");
+        grd.addColorStop("1","yellow");
+        context.fillStyle=grd;
+        context.fillRect(480,180,150,210); 
+        context.strokeStyle="#000000";
+        context.lineWidth=1;
+        context.strokeRect(480,180,150,210);
+
+// Penutup ke3
+        grd.addColorStop("0","yellow");
+        grd.addColorStop("0.3","yellow");
+        grd.addColorStop("0.5","yellow");
+        grd.addColorStop("0.6","yellow");
+        grd.addColorStop("0.8","yellow");
+        grd.addColorStop("1","yellow");
+        context.fillStyle=grd;
+        context.rotate(Math.PI/4);
+        context.fillRect(423,-348,150,32); 
+        context.strokeStyle="#000000";
+        context.lineWidth=1;
+        context.strokeRect(423,-348,150,32);
+
+//Cangkingan ke3
+        grd.addColorStop("0","yellow");
+        grd.addColorStop("0.2","yellow");
+        grd.addColorStop("0.3","yellow");
+        grd.addColorStop("0.5","yellow");
+        grd.addColorStop("0.6","yellow");
+        grd.addColorStop("0.8","yellow");
+        grd.addColorStop("0.9","yellow");
+        grd.addColorStop("1","yellow");
+        context.fillStyle=grd;
+        context.fillStyle="yellow";
+        context.rotate(Math.PI/2);
+        context.fillRect(-374,-512,25,24); 
+        context.strokeStyle="#000000";
+        context.lineWidth=1;
+        context.strokeRect(-374,-512,25,24);
+
+
 
 
 
