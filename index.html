@@ -14,6 +14,45 @@
 </head>
 <body>
     <canvas id="myCanvas"> Browser tidak support tag canvas</canvas>
-    <script src='R2M.js'></script>
+    <script>
+        var myCanvas = document.getElementById('myCanvas');
+        var context = myCanvas.getContext('2d');
+        myCanvas.width= myCanvas.scrollWidth;
+        myCanvas.height=myCanvas.scrollHeight;
+
+//Tempat sampah ke1
+        var grd=context.createLinearGradient(0,0,270,0);
+
+// Tong ke1
+        grd.addColorStop("0","yellow");
+        grd.addColorStop("0.5","yellow");
+        context.fillStyle=grd;
+        context.fillRect(70,180,150,210); 
+        context.strokeStyle="#000000";
+        context.lineWidth=1;
+        context.strokeRect(70,180,150,210);
+
+//Penutup ke1
+        grd.addColorStop("0","yellow");
+        grd.addColorStop("0.3","yellow");
+        grd.addColorStop("1","yellow");
+        context.fillStyle=grd;
+        context.fillRect(70,149,150,32); 
+        context.strokeStyle="#000000";
+        context.lineWidth=1;
+        context.strokeRect(70,149,150,32);
+
+//Cangkingan ke1
+        grd.addColorStop("0.4","yellow");
+        grd.addColorStop("0.5","yellow");
+        context.fillStyle=grd;
+        context.fillRect(133,124,25,24); 
+        context.strokeStyle="#000000";
+        context.lineWidth=1;
+        context.strokeRect(133,125,25,24);
+
+
+
+    </script>
 </body>
 </html>
